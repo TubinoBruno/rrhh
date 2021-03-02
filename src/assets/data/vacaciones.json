@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "cod_empleado": "10001",
+            "nom_empleado": "Claudia López",
+            "ci_empleado": "234567",
+            "cargo_empleado": "Jefe Administrativo",
+            "centro_costo": "Administración",
+            "jornada": "Completa",
+            "total_dias": "14",
+            "fecha_ini": "5-Jul-2020",
+            "fecha_fin": "15-Jul-2020",
+            "fecha_reinc": "16-Jul2020",
+            "dias_planif": "14",
+            "saldo_dias": "0",
+            "estado": "Aprobado"
+        },
+        {
+            "cod_empleado": "10001",
+            "nom_empleado": "Claudia López",
+            "ci_empleado": "234567",
+            "cargo_empleado": "Jefe Administrativo",
+            "centro_costo": "Administración",
+            "jornada": "Completa",
+            "total_dias": "14",
+            "fecha_ini": "23-Feb-2020",
+            "fecha_fin": "28-Feb-2020",
+            "fecha_reinc": "1-Mar-2020",
+            "dias_planif": "7",
+            "saldo_dias": "7",
+            "estado": "Rechazado"
+        },
+        {
+            "cod_empleado": "10001",
+            "nom_empleado": "Claudia López",
+            "ci_empleado": "234567",
+            "cargo_empleado": "Jefe Administrativo",
+            "centro_costo": "Administración",
+            "jornada": "Completa",
+            "total_dias": "14",
+            "fecha_ini": "16-Mar-2020",
+            "fecha_fin": "22-Mar-2020",
+            "fecha_reinc": "23-Mar-2020",
+            "dias_planif": "5",
+            "saldo_dias": "7",
+            "estado": "Ingresado"
+        }
+    ]
+}

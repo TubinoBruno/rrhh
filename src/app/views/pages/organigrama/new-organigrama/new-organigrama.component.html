@@ -1,0 +1,409 @@
+<div class="kt-subheader   kt-grid__item" id="kt_subheader">
+    <div class="kt-container  kt-container--fluid ">
+        <div class="kt-subheader__main">
+            <h3 class="kt-subheader__title">
+            </h3>
+            <span class="kt-subheader__separator kt-hidden"></span>
+            <div class="kt-subheader__breadcrumbs">
+                <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
+                <span class="kt-subheader__breadcrumbs-separator"></span>
+                <a routerLink="/admin/vacaciones" class="kt-subheader__breadcrumbs-link">
+                    Recursos Humanos </a>
+                <span class="kt-subheader__breadcrumbs-separator"></span>
+                <a routerLink="/admin/organigrama" class="kt-subheader__breadcrumbs-link">
+                    Organigramas </a>
+                <!-- <span class="kt-subheader__breadcrumbs-link kt-subheader__breadcrumbs-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="kt-subheader__toolbar" id="botones-barra">
+			<kt-custom-subheader></kt-custom-subheader>
+		</div>
+    </div>
+</div>
+
+
+
+
+
+<!-- begin:: Content -->
+<div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+    <div class="row">
+        <div class="col-xl-12">
+            <!--begin::Portlet-->
+            <div class="kt-portlet">
+                <div class="kt-portlet__head">
+                    <div class="kt-portlet__head-label">
+                        <span class="kt-portlet__head-icon">
+                            <i class="kt-font-brand fa fa-user"></i>
+                        </span>
+                        <h2 class="kt-portlet__head-title kt-font-brand">
+                            Nuevo organigrama
+                        </h2>
+                    </div>
+                    <div class="kt-portlet__head-toolbar">
+                        <div class="kt-portlet__head-actions">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="kt-portlet__body">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-4">
+
+                            <!--begin:: Widgets/Applications/User/Profile1-->
+                            <div class="kt-portlet kt-portlet--height-fluid- kt-portlet--skin-solid kt-bg-perfil">
+                                <div class="kt-portlet__head  kt-portlet__head--noborder">
+                                    <div class="kt-widget__content">
+                                        <div class="kt-widget__section">
+                                            <h5 class="kt-widget__username">
+                                                Organigrama N. 4<br>
+                                                <span
+                                                    class="kt-badge kt-badge--warning kt-badge--inline kt-badge--pill">-------</span>
+                                            </h5>
+
+                                            <span class="kt-widget__title">
+                                                Saffiro Informatica Srl
+                                            </span>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="kt-portlet__body kt-portlet__body--fit-y">
+
+                                    <!--begin::Widget -->
+                                    <div class="kt-widget kt-widget--user-profile-1">
+                                        <div class="kt-widget__head">
+                                            <div class="kt-widget__media">
+
+                                            </div>
+
+                                        </div>
+                                        <div class="kt-widget__body">
+                                            <div class="kt-widget__content">
+                                                <div class="kt-widget__info">
+                                                    <span class="kt-widget__label">Fecha creación:</span>
+                                                    <span class="kt-widget__data">3-Feb-2021</span>
+                                                </div>
+                                                <div class="kt-widget__info">
+                                                    <span class="kt-widget__label">Nombre creador:</span>
+                                                    <span class="kt-widget__data">Claudia López</span>
+                                                </div>
+
+                                                <div class="kt-widget__info">
+                                                    <span class="kt-widget__label">Cargo creador:</span>
+                                                    <span class="kt-widget__data">Jefe Administrativo</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="kt-widget__items funcionario">
+                                                <a class="kt-widget__item kt-widget__item--active">
+                                                    <span class="kt-widget__section">
+                                                        <span class="kt-widget__icon">
+                                                            <i class="kt-menu__link-icon fa fa-chart-bar"></i>
+                                                        </span>
+                                                        <span class="kt-widget__desc">
+                                                            Agregar funcionarios
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                                <a routerLink="/admin/organigrama/funcionarios-org"
+                                                    class="kt-widget__item ">
+                                                    <span class="kt-widget__section">
+                                                        <span class="kt-widget__icon">
+                                                            <i class="kt-menu__link-icon fa fa-cog	"></i>
+                                                        </span>
+                                                        <span class="kt-widget__desc">
+                                                            Funcionarios
+                                                        </span>
+                                                    </span>
+                                                </a>
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!--end::Widget -->
+                                </div>
+                            </div>
+
+                            <!--end:: Widgets/Applications/User/Profile1-->
+                        </div>
+
+                        <!--End:: App Aside-->
+
+
+                        <div class="col-xl-9 col-md-8">
+                            <div class="kt-portlet">
+                                <div class="kt-portlet__head">
+                                    <div class="kt-portlet__head-label">
+                                        <h3 class="kt-portlet__head-title">Datos del organigrama</h3>
+                                    </div>
+                                    <div class="kt-portlet__head-toolbar">
+                                        <div class="kt-portlet__head-wrapper">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="kt-form kt-form--label-right">
+                                    <div class="kt-portlet__body">
+                                        <div class="kt-section kt-section--first">
+                                            <div class="kt-section__body">
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Funcionario</label>
+                                                    <div class="input-group col-lg-6 col-xl-6">
+
+                                                        <select class="form-control kt-selectpicker" id="funcionario"
+                                                            data-size="5" data-width="350px" data-live-search="true">
+                                                            <option selected>Seleccione un funcionario...</option>
+                                                            <option value="lp">100234 - Rodolfo Andres Claros Mascarpone
+                                                            </option>
+                                                            <option value="cbba">100265 - Carla Andrea Ramirez Perez
+                                                            </option>
+                                                            <option value="cbba">100217 - Roberto Enrique Fernandez
+                                                                Reyes</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group col-lg-3 col-xl-3">
+                                                        <button type="button" id="btn-elegir-func"
+                                                            class="btn btn-brand">Agregar</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Inmediato
+                                                        superior</label>
+                                                    <div class="input-group col-lg-6 col-xl-6">
+
+                                                        <select class="form-control kt-selectpicker" id="funcionarios"
+                                                            data-size="5" data-width="350px" data-live-search="true">
+                                                            <option selected>Seleccione un funcionario...</option>
+                                                            <option value="lp">100234 - Rodolfo Andres Claros Mascarpone
+                                                            </option>
+                                                            <option value="cbba">100265 - Carla Andrea Ramirez Perez
+                                                            </option>
+                                                            <option value="cbba">100217 - Roberto Enrique Fernandez
+                                                                Reyes</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group col-lg-3 col-xl-3">
+                                                        <button type="button" id="btn-elegir-rol"
+                                                            class="btn btn-brand">Agregar</button>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="kt-separator kt-separator--border-solid kt-separator--space-lg kt-separator--portlet-fit">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label"></label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <h5>Funcionario</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Código
+                                                        empleado</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="codigo_emp" type="text"
+                                                            value="100234">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Nombre
+                                                        empleado</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="nombre_empleado" type="text"
+                                                            value="Rodolfo Andres Claros Mascarpone">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Cargo
+                                                        empleado</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="cargo_empleado" type="text"
+                                                            value="Ejecutivo Comercial">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="kt-separator kt-separator--border-solid kt-separator--space-lg kt-separator--portlet-fit">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label"></label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <h5>Inmediato superior</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Nombre
+                                                        empleado</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="nombre_emp" type="text"
+                                                            value="Rodolfo Andres Claros Mascarpone">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Cargo
+                                                        empleado</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="cargo_emp" type="text"
+                                                            value="Ejecutivo Comercial">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="kt-separator kt-separator--border-solid kt-separator--space-lg kt-separator--portlet-fit">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Vigencia
+                                                        fiscal</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <select class="form-control" id="jornada">
+                                                            <option>2021</option>
+                                                            <option>2020</option>
+                                                            <option>2019</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Empresa</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="empresa" type="text"
+                                                            value="Concordia">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Unidad de
+                                                        negocio</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="unidad_negocio"
+                                                            type="text" value="Funeraria">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Area</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="area" type="text"
+                                                            value="Atención al cliente">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Salario</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="salario" type="text"
+                                                            value="5000">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Nivel del
+                                                        cargo</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input disabled class="form-control" id="nivel_cargo"
+                                                            type="text" value="IV">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Categoría</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <select class="form-control" id="categoria">
+                                                            <option>Encargados y analistas senior</option>
+                                                            <option>Otra categoría</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Monto mínimo C del
+                                                        salario</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input class="form-control" id="monto_c" type="text"
+                                                            value="3000">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Monto medio B del
+                                                        salario</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input class="form-control" id="monto_b" type="text"
+                                                            value="4000">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Monto máximo A del
+                                                        salario</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <input class="form-control" id="monto_a" type="text"
+                                                            value="6000">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Moneda</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <select class="form-control" id="moneda">
+                                                            <option>Bolivianos</option>
+                                                            <option>Dólares</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Tipo
+                                                        planilla</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <select class="form-control" id="tipo_planilla">
+                                                            <option>Administrativa</option>
+                                                            <option>Obreros</option>
+                                                            <option>Comercial</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Tipo
+                                                        funcionario</label>
+                                                    <div class="col-lg-9 col-xl-6">
+                                                        <select class="form-control" id="tipo_funcionario">
+                                                            <option>Administrativo</option>
+                                                            <option>Obrero</option>
+                                                            <option>Comercial</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kt-portlet__foot">
+                                        <div class="kt-form__actions">
+                                            <div class="row">
+                                                <label class="col-xl-3 col-lg-3 col-form-label"
+                                                    style="text-align: right;">Rol XXX</label>
+                                                <div class="col-lg-9 col-xl-9">
+                                                    <button type="reset" id="btn-guardar-proceso"
+                                                        class="btn btn-success">Agregar funcionario</button>&nbsp;
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!--End:: App Content-->
+                    </div>
+
+                    <!--End::App-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

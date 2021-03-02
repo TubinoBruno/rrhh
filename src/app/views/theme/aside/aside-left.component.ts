@@ -6,14 +6,16 @@ import {
 	ElementRef,
 	OnInit,
 	Renderer2,
-	ViewChild
+	ViewChild,
+	EventEmitter
 } from '@angular/core';
 import { filter } from 'rxjs/operators';
 import { NavigationEnd, Router } from '@angular/router';
 import * as objectPath from 'object-path';
 // Layout
-import { LayoutConfigService, MenuAsideService, MenuOptions, OffcanvasOptions } from '../../../core/_base/layout';
+import { LayoutConfigService, MenuAsideService, MenuConfigService, MenuHorizontalService, MenuOptions, OffcanvasOptions } from '../../../core/_base/layout';
 import { HtmlClassService } from '../html-class.service';
+import { title } from 'process';
 
 @Component({
 	selector: 'kt-aside-left',
@@ -28,6 +30,7 @@ export class AsideLeftComponent implements OnInit, AfterViewInit {
 	currentRouteUrl: string = '';
 	insideTm: any;
 	outsideTm: any;
+	title: any;
 
 	menuCanvasOptions: OffcanvasOptions = {
 		baseClass: 'kt-aside',
@@ -80,7 +83,9 @@ export class AsideLeftComponent implements OnInit, AfterViewInit {
 		public layoutConfigService: LayoutConfigService,
 		private router: Router,
 		private render: Renderer2,
-		private cdr: ChangeDetectorRef
+		private cdr: ChangeDetectorRef,
+		private menuConfigService: MenuConfigService,
+		private menuHorizontal: MenuHorizontalService
 	) {
 	}
 
@@ -96,7 +101,7 @@ export class AsideLeftComponent implements OnInit, AfterViewInit {
 				this.currentRouteUrl = this.router.url.split(/[?#]/)[0];
 				this.cdr.markForCheck();
 			});
-
+		this.menuAsideService.customTitle.subscribe(t => this.title = t )
 		const config = this.layoutConfigService.getConfig();
 
 		if (objectPath.get(config, 'aside.menu.dropdown') !== true && objectPath.get(config, 'aside.self.fixed')) {
@@ -118,7 +123,7 @@ export class AsideLeftComponent implements OnInit, AfterViewInit {
 		if (item.submenu) {
 			return this.isMenuRootItemIsActive(item);
 		}
-
+		
 		if (!item.page) {
 			return false;
 		}
@@ -165,7 +170,15 @@ export class AsideLeftComponent implements OnInit, AfterViewInit {
 			}, 50);
 		}
 	}
+	clickbtn(a: any){
+		if(a.hasOwnProperty("ref")){
+			this.menuConfigService.setMenusTopBar(this.menuConfigService.getMenus()[a.ref])
+			this.menuHorizontal.loadMenu()
+		}
+		this.menuAsideService.changeTitle(a.title)
 
+	}
+	
 	/**
 	 * Use for fixed left aside menu, to show menu on mouseenter event.
 	 * @param e Event

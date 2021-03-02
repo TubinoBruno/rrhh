@@ -5,7 +5,7 @@ import { Observable, Subscription } from 'rxjs';
 // Object-Path
 import * as objectPath from 'object-path';
 // Layout
-import { LayoutConfigService, MenuConfigService, PageConfigService } from '../../../core/_base/layout';
+import { LayoutConfigService, MenuConfigService, MenuHorizontalService, PageConfigService } from '../../../core/_base/layout';
 import { HtmlClassService } from '../html-class.service';
 import { LayoutConfig } from '../../../core/_config/layout.config';
 import { MenuConfig } from '../../../core/_config/menu.config';
@@ -53,7 +53,7 @@ export class BaseComponent implements OnInit, OnDestroy {
 		private htmlClassService: HtmlClassService,
 		private store: Store<AppState>,
 		private permissionsService: NgxPermissionsService,
-		private currentRoute : ActivatedRoute
+		private currentRoute : ActivatedRoute,
 		)
 		{
 
@@ -65,6 +65,7 @@ export class BaseComponent implements OnInit, OnDestroy {
 		if (visitor == 'admin'){
 			this.menuConfigService.loadConfigs(new MenuConfig().configs);
 		}
+		
 		else {
 			this.menuConfigService.loadConfigs(new MenuConfig().user_configs);
 		}

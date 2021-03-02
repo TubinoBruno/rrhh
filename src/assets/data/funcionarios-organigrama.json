@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "nom_funcionario": "Fernando Cáceres",
+            "cargo_funcionario": "Administrativo Contable",
+            "nom_superior": "Claudia López",
+            "cargo_superior": "Jefe Administrativo",
+            "empresa": "Kantutani",
+            "unidad_negocio": "Funeraria",
+            "area": "Atención al Cliente",
+            "salario": "5000",
+            "nivel": "IV",
+            "categoria": "Analista senior",
+            "monto_c": "3000",
+            "monto_b": "4000",
+            "monto_a": "5000",
+            "moneda": "Bolivianos",
+            "tipo_planilla": "Administrativa",
+            "tipo_funcionario": "Administrativo"
+        },
+        {
+            "nom_funcionario": "Jorge Aguilar",
+            "cargo_funcionario": "Ejecutivo Comercial",
+            "nom_superior": "Carla Ramos",
+            "cargo_superior": "Jefe Comercial",
+            "empresa": "Kantutani",
+            "unidad_negocio": "Funeraria",
+            "area": "Ventas",
+            "salario": "6000",
+            "nivel": "IV",
+            "categoria": "Analista senior",
+            "monto_c": "4000",
+            "monto_b": "6000",
+            "monto_a": "8000",
+            "moneda": "Bolivianos",
+            "tipo_planilla": "Comercial",
+            "tipo_funcionario": "Comercial"
+        },
+        {
+            "nom_funcionario": "Claudia Davalos",
+            "cargo_funcionario": "Asistente Administrativo",
+            "nom_superior": "Claudia López",
+            "cargo_superior": "Jefe Administrativo",
+            "empresa": "Kantutani",
+            "unidad_negocio": "Funeraria",
+            "area": "Administración",
+            "salario": "4000",
+            "nivel": "IV",
+            "categoria": "Analista junior",
+            "monto_c": "3000",
+            "monto_b": "4000",
+            "monto_a": "5000",
+            "moneda": "Bolivianos",
+            "tipo_planilla": "Administrativa",
+            "tipo_funcionario": "Administrativo"
+        }
+    ]
+}

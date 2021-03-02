@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "cod_organigrama": "1",
+            "nom_creador": "Claudia López",
+            "cargo_creador": "Jefe Administrativo",
+            "vigencia_fiscal": "2020",
+            "fecha_creacion": "12-nov-2019",
+            "estado": "Inactivo"
+        },
+        {
+            "cod_organigrama": "2",
+            "nom_creador": "Roberto Aguirre",
+            "cargo_creador": "Jefe RRHH",
+            "vigencia_fiscal": "2020",
+            "fecha_creacion": "8-sep-2019",
+            "estado": "Inactivo"
+        },
+        {
+            "cod_organigrama": "3",
+            "nom_creador": "Claudia López",
+            "cargo_creador": "Jefe Administrativo",
+            "vigencia_fiscal": "2021",
+            "fecha_creacion": "2-ene-2020",
+            "estado": "Activo"
+        }
+    ]
+}

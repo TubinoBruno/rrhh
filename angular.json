@@ -47,7 +47,11 @@
               "node_modules/raphael/raphael.js",
               "node_modules/morris.js/morris.js",
               "src/assets/js/global/integration/plugins/plugins.bundle.js",
-              "src/assets/js/global/integration/plugins/scripts.bundle.js"
+              "src/assets/js/global/integration/plugins/scripts.bundle.js",
+              "src/assets/js/global/integration/plugins/evo-calendar.min.js",
+              "src/assets/js/global/components/base/github_contribution.js",
+              "src/assets/js/global/integration/plugins/evo-calendar.js",
+              "src/assets/js/global/components/base/basic.js"
             ],
 		  	"stylePreprocessorOptions": {
 			  "includePaths": [

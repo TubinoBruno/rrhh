@@ -21,7 +21,9 @@
 				display: none !important;
 			}
 		}
-
+		.kt-header__title.kt-grid__item{
+			width: 15%;
+		}
 		@media (min-width: 1025px) {
 			.kt-header__topbar, .kt-header__topbar-item-wrapper {
 				height: 100%;

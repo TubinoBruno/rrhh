@@ -151,7 +151,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 					if (user) {
 						this.store.dispatch(new Login({authToken: user.accessToken}));
 						// this.router.navigateByUrl(this.returnUrl);
-						this.router.navigateByUrl('/admin/dashboard');
+						this.router.navigateByUrl('/admin/vacaciones');
 					} else {
 						this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.INVALID_LOGIN'), 'danger');
 					}

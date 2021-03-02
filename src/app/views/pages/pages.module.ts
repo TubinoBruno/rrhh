@@ -8,6 +8,7 @@ import { PartialsModule } from '../partials/partials.module';
 // Pages
 import { CoreModule } from '../../core/core.module';
 
+
 @NgModule({
 	declarations: [],
 	exports: [],

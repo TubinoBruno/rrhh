@@ -6,12 +6,12 @@ import { BaseComponent } from './views/theme/base/base.component';
 import { ErrorPageComponent } from './views/theme/content/error-page/error-page.component';
 // Auth
 import { AuthGuard } from './core/auth';
-import {AuthUserGuard } from './core/auth';
+import { AuthUserGuard } from './core/auth';
 
 const routes: Routes = [
-	{ path : '', loadChildren : () => import('../app/views/pages/home/home.module').then(m => m.HomeModule)},
-	{ path: 'admin', loadChildren: () => import('../app/views/pages/auth/auth.module').then(m => m.AuthModule)},
-	{ path : 'user', loadChildren : () => import('../app/views/pages/auth-user/auth-user.module').then(m => m.AuthUserModule)},
+	{ path: '', loadChildren: () => import('../app/views/pages/home/home.module').then(m => m.HomeModule) },
+	{ path: 'admin', loadChildren: () => import('../app/views/pages/auth/auth.module').then(m => m.AuthModule) },
+	{ path: 'user', loadChildren: () => import('../app/views/pages/auth-user/auth-user.module').then(m => m.AuthUserModule) },
 	{
 		path: 'admin',
 		component: BaseComponent,
@@ -22,24 +22,36 @@ const routes: Routes = [
 				loadChildren: () => import('../app/views/pages/dashboard/dashboard.module').then(m => m.DashboardModule)
 			},
 			{
-				path : 'desarrollo',
+				path: 'desarrollo',
 				loadChildren: () => import('../app/views/pages/development/development.module').then(m => m.DevelopmentModule)
 			},
 			{
-				path : 'reclutamiento',
-				loadChildren : () => import('../app/views/pages/recruitment/recruitment.module').then(m => m.RecruitmentModule)
+				path: 'reclutamiento',
+				loadChildren: () => import('../app/views/pages/recruitment/recruitment.module').then(m => m.RecruitmentModule)
 			},
 			{
-				path : 'evaluacion',
-				loadChildren : () => import('../app/views/pages/evaluations/evaluations.module').then(m => m.EvaluationsModule)
+				path: 'evaluacion',
+				loadChildren: () => import('../app/views/pages/evaluations/evaluations.module').then(m => m.EvaluationsModule)
 			},
 			{
-				path : 'beneficios',
-				loadChildren : () => import('../app/views/pages/benefits/benefits.module').then(m => m.BenefitsModule)
+				path: 'beneficios',
+				loadChildren: () => import('../app/views/pages/benefits/benefits.module').then(m => m.BenefitsModule)
 			},
 			{
-				path : 'actividad',
-				loadChildren : () => import('../app/views/pages/activity/activity.module').then(m => m.ActivityModule)
+				path: 'actividad',
+				loadChildren: () => import('../app/views/pages/activity/activity.module').then(m => m.ActivityModule)
+			},
+			{
+				path: 'vacaciones',
+				loadChildren: () => import('../app/views/pages/admin-holidays/admin-holidays.module').then(m => m.AdminHolidaysModule)
+			},
+			{
+				path: 'organigrama',
+				loadChildren: () => import('../app/views/pages/organigrama/organigrama.module').then(m => m.OrganigramaModule)
+			},
+			{
+				path: 'agenda',
+				loadChildren: () => import('../app/views/pages/diary/diary.module').then(m => m.DiaryModule)
 			},
 			{
 				path: 'error/403',
@@ -51,31 +63,37 @@ const routes: Routes = [
 					'desc': 'Looks like you don\'t have permission to access for requested page.<br> Please, contact administrator'
 				}
 			},
-			{path: 'error/:type', component: ErrorPageComponent},
-			{path: '', redirectTo: 'admin/dashboard', pathMatch: 'full'},
-			{path: '**', redirectTo: 'admin/dashboard', pathMatch: 'full'}
+			{ path: 'error/:type', component: ErrorPageComponent },
+			{ path: '', redirectTo: 'admin/vacaciones', pathMatch: 'full' },
+			{ path: '**', redirectTo: 'admin/vacaciones', pathMatch: 'full' }
 		]
 	},
+
 	{
 		path: 'user',
 		component: BaseComponent,
 		canActivate: [AuthUserGuard],
-		children : [
+		children: [
 			{
-				path : 'dashboard',
-				loadChildren : () => import('../app/views/pages/user-dashboard/user-dashboard.module').then(m => m.UserDashboardModule)
+				path: 'dashboard',
+				loadChildren: () => import('../app/views/pages/user-dashboard/user-dashboard.module').then(m => m.UserDashboardModule)
 			},
 			{
-				path : 'beneficios-usuario',
-				loadChildren : () => import('../app/views/pages/user-benefits/user-benefits.module').then(m => m.UserBenefitsModule)
+				path: 'beneficios-usuario',
+				loadChildren: () => import('../app/views/pages/user-benefits/user-benefits.module').then(m => m.UserBenefitsModule)
 			},
-			{path: 'error/:type', component: ErrorPageComponent},
-			{path: '', redirectTo: 'user/user-benefits', pathMatch: 'full'},
-			{path: '**', redirectTo: 'user/user-benefits', pathMatch: 'full'}
+			{
+				path: 'usuario-vacaciones',
+				loadChildren: () => import('../app/views/pages/user-holidays/user-holidays.module').then(m => m.UserHolidaysModule)
+			},
+			
+			{ path: 'error/:type', component: ErrorPageComponent },
+			{ path: '', redirectTo: 'user/usuario-vacaciones', pathMatch: 'full' },
+			{ path: '**', redirectTo: 'user/usuario-vacaciones', pathMatch: 'full' }
 		]
 	},
-	{path: '', redirectTo: '', pathMatch: 'full'},
-	{path: '**', redirectTo: '', pathMatch: 'full'},
+	{ path: '', redirectTo: '', pathMatch: 'full' },
+	{ path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({

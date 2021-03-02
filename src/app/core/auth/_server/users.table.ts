@@ -8,7 +8,7 @@ export class UsersTable {
 			accessToken: 'access-token-8f3ae836da744329a6f93bf20594b5cc',
 			refreshToken: 'access-token-f8c137a2c98743f48b643e71161d90aa',
 			roles: [1], // Administrator
-			pic: './assets/media/users/300_25.jpg',
+			pic: './assets/media/users/300_2.jpg',
 			fullname: 'Sean',
 			occupation: 'CEO',
 			companyName: 'Keenthemes',
@@ -60,7 +60,7 @@ export class UsersTable {
 			accessToken: 'access-token-d2dff7b82f784de584b60964abbe45b9',
 			refreshToken: 'access-token-c999ccfe74aa40d0aa1a64c5e620c1a5',
 			roles: [3], // Guest
-			pic: './assets/media/users/default.jpg',
+			pic: './assets/media/users/300_2.jpg',
 			fullname: 'Ginobili Maccari',
 			occupation: 'CFO',
 			companyName: 'Keenthemes',

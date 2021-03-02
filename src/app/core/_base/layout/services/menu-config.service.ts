@@ -2,6 +2,7 @@
 import { Injectable } from '@angular/core';
 // RxJS
 import { Subject } from 'rxjs';
+import { MenuHorizontalService } from '..';
 
 @Injectable()
 export class MenuConfigService {
@@ -9,11 +10,10 @@ export class MenuConfigService {
 	onConfigUpdated$: Subject<any>;
 	// Private properties
 	private menuConfig: any;
-
 	/**
 	 * Service Constructor
 	 */
-	constructor() {
+	constructor(	 ) {
 		// register on config changed event and set default config
 		this.onConfigUpdated$ = new Subject();
 	}
@@ -24,7 +24,11 @@ export class MenuConfigService {
 	getMenus() {
 		return this.menuConfig;
 	}
-
+	setMenusTopBar(elem: any){
+		this.menuConfig.header = elem;
+		this.loadConfigs(this.menuConfig)
+	}
+	
 	/**
 	 * Load config
 	 *

@@ -106,6 +106,7 @@ export class LayoutConfigService {
 			} catch (e) {
 			}
 		}
+
 		return logo;
 	}
 

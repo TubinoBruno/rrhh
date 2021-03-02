@@ -13,7 +13,7 @@ import * as objectPath from 'object-path';
 // Loading bar
 import { LoadingBarService } from '@ngx-loading-bar/core';
 // Layout
-import { LayoutConfigService, LayoutRefService } from '../../../core/_base/layout';
+import { LayoutConfigService, LayoutRefService, MenuAsideService } from '../../../core/_base/layout';
 // HTML Class Service
 import { HtmlClassService } from '../html-class.service';
 
@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 	// Public properties
 	menuHeaderDisplay: boolean;
 	fluid: boolean;
-
+	title: any;
 	@ViewChild('ktHeader', {static: true}) ktHeader: ElementRef;
 
 	/**
@@ -44,7 +44,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 		private layoutRefService: LayoutRefService,
 		private layoutConfigService: LayoutConfigService,
 		public loader: LoadingBarService,
-		public htmlClassService: HtmlClassService
+		public htmlClassService: HtmlClassService,
+		public menuAsideService: MenuAsideService,
+
+
 	) {
 		// page progress bar percentage
 		this.router.events.subscribe(event => {
@@ -86,10 +89,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 			// header minimize on scroll down
 			this.ktHeader.nativeElement.setAttribute('data-ktheader-minimize', '1');
 		}
+		this.menuAsideService.customTitle.subscribe(t => this.title = t)
 	}
 
 	ngAfterViewInit(): void {
 		// keep header element in the service
 		this.layoutRefService.addElement('header', this.ktHeader.nativeElement);
+
 	}
 }

@@ -27,6 +27,7 @@ export class MenuHorizontalService {
 	loadMenu() {
 		// get menu list
 		const menuItems: any[] = objectPath.get(this.menuConfigService.getMenus(), 'header.items');
+		
 		this.menuList$.next(menuItems);
 	}
 }

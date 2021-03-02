@@ -7,9 +7,13 @@ import * as objectPath from 'object-path';
 // Services
 import { MenuConfigService } from './menu-config.service';
 
+
 @Injectable()
 export class MenuAsideService {
 	// Public properties
+	private title = new BehaviorSubject<string>('Personal');
+	public customTitle = this.title.asObservable();
+
 	menuList$: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
 
 	/**
@@ -32,5 +36,20 @@ export class MenuAsideService {
 			menuItems = config['aside']['items']; 
 			this.menuList$.next(menuItems);
 		});
+	}
+	// getTitleMenus(a: any){
+	// 	this.title = a.title;
+	// 	return this.title
+	// }
+	// getTitleAside(){
+	// 	if(this.title){
+	// 		return this.title;
+	// 	}
+	// 	else{
+	// 		return "Personal"
+	// 	}
+	// }
+	public changeTitle(t: string): void {
+		this.title.next(t);
 	}
 }

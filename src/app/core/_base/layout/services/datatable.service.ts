@@ -141,4 +141,21 @@ export class DataTableService {
 	getCapacitaIntegra() : Observable<any> {
 		return this.http.get<any>(JSON_URL + 'capacitaciones-integrantes.json');
 	}
+
+	getAllSolicitudes() : Observable<any> {
+		return this.http.get<any>(JSON_URL + 'vacaciones-admin.json');
+	}
+
+	getSolicitudesPendientes() : Observable<any> {
+		return this.http.get<any>(JSON_URL + 'vacaciones-admin.json');
+	}
+	getSolicitudesPendientesUser() : Observable<any> {
+		return this.http.get<any>(JSON_URL + 'vacaciones.json');
+	}
+	getAllOrganigrama() : Observable<any> {
+		return this.http.get<any>(JSON_URL + 'organigramas.json');
+	}
+	getAllFuncionariosOrganigrama() : Observable<any> {
+		return this.http.get<any>(JSON_URL + 'funcionarios-organigrama.json');
+	}
 }
