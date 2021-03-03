@@ -37,6 +37,9 @@
               "src/assets/plugins/flaticon/flaticon.css",
               "src/assets/plugins/flaticon2/flaticon.css",
               "src/assets/sass/style.angular.scss",
+              "src/assets/sass/custom/plugins.bundle.css",
+              "src/assets/sass/custom/style.bundle.css",
+              "src/assets/sass/custom/saffiro.css",
               "node_modules/morris.js/morris.css"
             ],
             "scripts": [
@@ -47,11 +50,18 @@
               "node_modules/raphael/raphael.js",
               "node_modules/morris.js/morris.js",
               "src/assets/js/global/integration/plugins/plugins.bundle.js",
+              "src/assets/js/global/components/base/bootstrap-datepicker.js",
+              "src/assets/js/global/components/base/bootstrap-select.js",
+
               "src/assets/js/global/integration/plugins/scripts.bundle.js",
               "src/assets/js/global/integration/plugins/evo-calendar.min.js",
               "src/assets/js/global/components/base/github_contribution.js",
               "src/assets/js/global/integration/plugins/evo-calendar.js",
-              "src/assets/js/global/components/base/basic.js"
+              "src/assets/js/global/components/base/basic.js",
+              "src/assets/js/global/integration/plugins/kendo.all.min.js",
+
+              "src/assets/js/global/components/base/organigrama.js"
+
             ],
 		  	"stylePreprocessorOptions": {
 			  "includePaths": [

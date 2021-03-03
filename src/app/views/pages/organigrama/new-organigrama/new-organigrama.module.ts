@@ -26,16 +26,12 @@ import { FuncionariosOrganigramaComponent } from './funcionarios-organigrama/fun
 			}, {
 				path: 'funcionarios-org',
 				component: FuncionariosOrganigramaComponent
-			},{
-				path: 'organigrama',
-				component: OrganigramaComponent
 			},
 		]),
 	],
 	providers: [],
 	declarations: [
     NewOrganigramaComponent,
-		OrganigramaComponent,
 		FuncionariosOrganigramaComponent,
 	]
 })

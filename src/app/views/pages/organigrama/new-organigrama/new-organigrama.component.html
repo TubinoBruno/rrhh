@@ -7,17 +7,20 @@
             <div class="kt-subheader__breadcrumbs">
                 <a href="#" class="kt-subheader__breadcrumbs-home"><i class="flaticon2-shelter"></i></a>
                 <span class="kt-subheader__breadcrumbs-separator"></span>
-                <a routerLink="/admin/vacaciones" class="kt-subheader__breadcrumbs-link">
-                    Recursos Humanos </a>
+                <a  class="kt-subheader__breadcrumbs-link">
+                    Dashboard </a>
                 <span class="kt-subheader__breadcrumbs-separator"></span>
-                <a routerLink="/admin/organigrama" class="kt-subheader__breadcrumbs-link">
+                <a  class="kt-subheader__breadcrumbs-link">
                     Organigramas </a>
+                <span class="kt-subheader__breadcrumbs-separator"></span>
+                <a  class="kt-subheader__breadcrumbs-link">
+                    Nuevo organigrama </a>
                 <!-- <span class="kt-subheader__breadcrumbs-link kt-subheader__breadcrumbs-link--active">Active link</span> -->
             </div>
         </div>
         <div class="kt-subheader__toolbar" id="botones-barra">
-			<kt-custom-subheader></kt-custom-subheader>
-		</div>
+            <kt-custom-subheader></kt-custom-subheader>
+        </div>
     </div>
 </div>
 
@@ -108,7 +111,7 @@
                                                         </span>
                                                     </span>
                                                 </a>
-                                                <a routerLink="/admin/organigrama/funcionarios-org"
+                                                <a routerLink="/admin/new-org/funcionarios-org"
                                                     class="kt-widget__item ">
                                                     <span class="kt-widget__section">
                                                         <span class="kt-widget__icon">
@@ -156,47 +159,35 @@
                                                 <div class="form-group row">
                                                     <label class="col-xl-3 col-lg-3 col-form-label">Funcionario</label>
                                                     <div class="input-group col-lg-6 col-xl-6">
-
-                                                        <select class="form-control kt-selectpicker" id="funcionario"
-                                                            data-size="5" data-width="350px" data-live-search="true">
-                                                            <option selected>Seleccione un funcionario...</option>
-                                                            <option value="lp">100234 - Rodolfo Andres Claros Mascarpone
-                                                            </option>
-                                                            <option value="cbba">100265 - Carla Andrea Ramirez Perez
-                                                            </option>
-                                                            <option value="cbba">100217 - Roberto Enrique Fernandez
-                                                                Reyes</option>
+                                                        
+                                                        <select class="form-control kt-selectpicker" id="funcionario" data-size="5" data-width="350px" data-live-search="true" >
+                                                            <option selected >Seleccione un funcionario...</option>
+                                                            <option  value="lp" >100234 - Rodolfo Andres Claros Mascarpone</option>
+                                                            <option value="cbba">100265 - Carla Andrea Ramirez Perez</option>
+                                                            <option value="cbba">100217 - Roberto Enrique Fernandez Reyes</option>
                                                         </select>
                                                     </div>
                                                     <div class="input-group col-lg-3 col-xl-3">
-                                                        <button type="button" id="btn-elegir-func"
-                                                            class="btn btn-brand">Agregar</button>
+                                                        <button  type="button" id="btn-elegir" class="btn btn-brand">Agregar</button>
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Inmediato
-                                                        superior</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Inmediato superior</label>
                                                     <div class="input-group col-lg-6 col-xl-6">
-
-                                                        <select class="form-control kt-selectpicker" id="funcionarios"
-                                                            data-size="5" data-width="350px" data-live-search="true">
-                                                            <option selected>Seleccione un funcionario...</option>
-                                                            <option value="lp">100234 - Rodolfo Andres Claros Mascarpone
-                                                            </option>
-                                                            <option value="cbba">100265 - Carla Andrea Ramirez Perez
-                                                            </option>
-                                                            <option value="cbba">100217 - Roberto Enrique Fernandez
-                                                                Reyes</option>
+                                                        
+                                                        <select class="form-control kt-selectpicker" id="funcionarios" data-size="5" data-width="350px" data-live-search="true" >
+                                                            <option selected >Seleccione un funcionario...</option>
+                                                            <option  value="lp" >100234 - Rodolfo Andres Claros Mascarpone</option>
+                                                            <option value="cbba">100265 - Carla Andrea Ramirez Perez</option>
+                                                            <option value="cbba">100217 - Roberto Enrique Fernandez Reyes</option>
                                                         </select>
                                                     </div>
                                                     <div class="input-group col-lg-3 col-xl-3">
-                                                        <button type="button" id="btn-elegir-rol"
-                                                            class="btn btn-brand">Agregar</button>
+                                                        <button  type="button" id="btn-elegir-fnc" class="btn btn-brand">Agregar</button>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="kt-separator kt-separator--border-solid kt-separator--space-lg kt-separator--portlet-fit">
-                                                </div>
+                                                <div class="kt-separator kt-separator--border-solid kt-separator--space-lg kt-separator--portlet-fit"></div>	
                                                 <div class="form-group row">
                                                     <label class="col-xl-3 col-lg-3 col-form-label"></label>
                                                     <div class="col-lg-9 col-xl-6">
@@ -204,32 +195,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Código
-                                                        empleado</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Código empleado</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="codigo_emp" type="text"
-                                                            value="100234">
+                                                        <input disabled class="form-control" id="codigo_emp" type="text" value="100234">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Nombre
-                                                        empleado</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Nombre empleado</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="nombre_empleado" type="text"
-                                                            value="Rodolfo Andres Claros Mascarpone">
+                                                        <input disabled class="form-control" id="nombre_emp" type="text" value="Rodolfo Andres Claros Mascarpone">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Cargo
-                                                        empleado</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Cargo empleado</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="cargo_empleado" type="text"
-                                                            value="Ejecutivo Comercial">
+                                                        <input disabled class="form-control" id="cargo_empl" type="text" value="Ejecutivo Comercial">
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="kt-separator kt-separator--border-solid kt-separator--space-lg kt-separator--portlet-fit">
-                                                </div>
+                                                <div class="kt-separator kt-separator--border-solid kt-separator--space-lg kt-separator--portlet-fit"></div>
                                                 <div class="form-group row">
                                                     <label class="col-xl-3 col-lg-3 col-form-label"></label>
                                                     <div class="col-lg-9 col-xl-6">
@@ -237,32 +220,25 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Nombre
-                                                        empleado</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Nombre empleado</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="nombre_emp" type="text"
-                                                            value="Rodolfo Andres Claros Mascarpone">
+                                                        <input disabled class="form-control" id="nombre_empl" type="text" value="Rodolfo Andres Claros Mascarpone">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Cargo
-                                                        empleado</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Cargo empleado</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="cargo_emp" type="text"
-                                                            value="Ejecutivo Comercial">
+                                                        <input disabled class="form-control" id="cargo_emp" type="text" value="Ejecutivo Comercial">
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="kt-separator kt-separator--border-solid kt-separator--space-lg kt-separator--portlet-fit">
-                                                </div>
+                                                <div class="kt-separator kt-separator--border-solid kt-separator--space-lg kt-separator--portlet-fit"></div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Vigencia
-                                                        fiscal</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Vigencia fiscal</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <select class="form-control" id="jornada">
+                                                        <select  class="form-control" id="jornada" >
                                                             <option>2021</option>
                                                             <option>2020</option>
-                                                            <option>2019</option>
+                                                            <option>2019</option>																	
                                                         </select>
 
                                                     </div>
@@ -270,45 +246,38 @@
                                                 <div class="form-group row">
                                                     <label class="col-xl-3 col-lg-3 col-form-label">Empresa</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="empresa" type="text"
-                                                            value="Concordia">
+                                                        <input disabled class="form-control" id="empresa" type="text" value="Concordia">
                                                     </div>
                                                 </div>
-
+                                                
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Unidad de
-                                                        negocio</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Unidad de negocio</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="unidad_negocio"
-                                                            type="text" value="Funeraria">
+                                                        <input disabled class="form-control" id="unidad_negocio" type="text" value="Funeraria">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-xl-3 col-lg-3 col-form-label">Area</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="area" type="text"
-                                                            value="Atención al cliente">
+                                                        <input disabled class="form-control" id="area" type="text" value="Atención al cliente">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-xl-3 col-lg-3 col-form-label">Salario</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="salario" type="text"
-                                                            value="5000">
+                                                        <input disabled class="form-control" id="salario" type="text" value="5000">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Nivel del
-                                                        cargo</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Nivel del cargo</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input disabled class="form-control" id="nivel_cargo"
-                                                            type="text" value="IV">
+                                                        <input disabled class="form-control" id="nivel_cargo" type="text" value="IV">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-xl-3 col-lg-3 col-form-label">Categoría</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <select class="form-control" id="categoria">
+                                                        <select  class="form-control" id="categoria" >
                                                             <option>Encargados y analistas senior</option>
                                                             <option>Otra categoría</option>
                                                         </select>
@@ -316,33 +285,27 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Monto mínimo C del
-                                                        salario</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Monto mínimo C del salario</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input class="form-control" id="monto_c" type="text"
-                                                            value="3000">
+                                                        <input  class="form-control" id="monto_c" type="text" value="3000">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Monto medio B del
-                                                        salario</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Monto medio B del salario</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input class="form-control" id="monto_b" type="text"
-                                                            value="4000">
+                                                        <input  class="form-control" id="monto_b" type="text" value="4000">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Monto máximo A del
-                                                        salario</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Monto máximo A del salario</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <input class="form-control" id="monto_a" type="text"
-                                                            value="6000">
+                                                        <input  class="form-control" id="monto_a" type="text" value="6000">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-xl-3 col-lg-3 col-form-label">Moneda</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <select class="form-control" id="moneda">
+                                                        <select  class="form-control" id="moneda" >
                                                             <option>Bolivianos</option>
                                                             <option>Dólares</option>
                                                         </select>
@@ -350,10 +313,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Tipo
-                                                        planilla</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Tipo planilla</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <select class="form-control" id="tipo_planilla">
+                                                        <select  class="form-control" id="tipo_planilla" >
                                                             <option>Administrativa</option>
                                                             <option>Obreros</option>
                                                             <option>Comercial</option>
@@ -362,10 +324,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-xl-3 col-lg-3 col-form-label">Tipo
-                                                        funcionario</label>
+                                                    <label class="col-xl-3 col-lg-3 col-form-label">Tipo funcionario</label>
                                                     <div class="col-lg-9 col-xl-6">
-                                                        <select class="form-control" id="tipo_funcionario">
+                                                        <select  class="form-control" id="tipo_funcionario" >
                                                             <option>Administrativo</option>
                                                             <option>Obrero</option>
                                                             <option>Comercial</option>
@@ -373,24 +334,22 @@
 
                                                     </div>
                                                 </div>
-
+                                                
                                             </div>
                                         </div>
                                     </div>
                                     <div class="kt-portlet__foot">
                                         <div class="kt-form__actions">
                                             <div class="row">
-                                                <label class="col-xl-3 col-lg-3 col-form-label"
-                                                    style="text-align: right;">Rol XXX</label>
+                                                <label class="col-xl-3 col-lg-3 col-form-label" style="text-align: right;">Rol XXX</label>
                                                 <div class="col-lg-9 col-xl-9">
-                                                    <button type="reset" id="btn-guardar-proceso"
-                                                        class="btn btn-success">Agregar funcionario</button>&nbsp;
-
+                                                    <button  type="reset" id="btn-guardar-proceso" class="btn btn-success">Agregar funcionario</button>&nbsp;
+                                                    
                                                 </div>
-
+                                                
                                             </div>
-
-
+                                            
+                                            
                                         </div>
                                     </div>
                                 </form>

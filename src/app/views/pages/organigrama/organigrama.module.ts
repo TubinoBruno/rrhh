@@ -25,21 +25,13 @@ import { OrganigramaComponent } from './organigrama.component';
 				redirectTo: '',
 				component: OrganigramaComponent
 			}, 
-      {
-				path: 'new-org',
-				component: NewOrganigramaComponent
-			},
-      {
-				path: 'funcionarios-org',
-				component: FuncionariosOrganigramaComponent
-			},
+      
+      
 		]),
 	],
 	providers: [],
 	declarations: [
 		OrganigramaComponent,
-		FuncionariosOrganigramaComponent,
-    NewOrganigramaComponent
 	]
 })
 export class OrganigramaModule { }

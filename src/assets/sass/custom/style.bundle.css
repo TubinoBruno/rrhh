@@ -13055,7 +13055,7 @@ code {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    content: ""; }
+    content: "algo"; }
   .bootstrap-select > .dropdown-toggle:before {
     width: auto; }
 

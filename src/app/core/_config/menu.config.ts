@@ -21,6 +21,7 @@ export class MenuConfig {
 				{
 					title: 'Organigrama',
 					subtitle: 'dashboard',
+					bullet: 'dot',
 					root: true,
 					alignment: 'left',
 					toggle: 'click',
@@ -35,7 +36,7 @@ export class MenuConfig {
 							title: 'Nuevo organigrama',
 							bullet: 'dot',
 							icon: 'fa fa-plus-square',
-							page: '/admin/organigrama/new-org',
+							page: '/admin/new-org',
 						}
 
 					]
@@ -258,7 +259,7 @@ export class MenuConfig {
 					title: 'Dashboard',
 					root: true,
 					icon: 'flaticon2-protection',
-					// page: '',
+					page: '/admin/dashboard',
 					// ref: 'header2',
 					translate: 'MENU.DASHBOARD',
 					bullet: 'dot',
@@ -273,8 +274,7 @@ export class MenuConfig {
 					title: 'Recursos Humanos',
 					root: true,
 					icon: 'flaticon2-group',
-					page: '/admin/vacaciones',
-					ref: 'header1',
+					page: '/admin/',
 					bullet: 'dot',
 
 				},

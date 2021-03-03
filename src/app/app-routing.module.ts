@@ -50,6 +50,10 @@ const routes: Routes = [
 				loadChildren: () => import('../app/views/pages/organigrama/organigrama.module').then(m => m.OrganigramaModule)
 			},
 			{
+				path: 'new-org',
+				loadChildren: () => import('../app/views/pages/organigrama/new-organigrama/new-organigrama.module').then(m => m.NewOrganigramaModule)
+			},
+			{
 				path: 'agenda',
 				loadChildren: () => import('../app/views/pages/diary/diary.module').then(m => m.DiaryModule)
 			},
