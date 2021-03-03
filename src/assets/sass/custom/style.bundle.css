@@ -49,7 +49,29 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
-
+div.filter-option::after {
+  border: 0;
+  margin-right: 2px;
+  font-size: 0.6rem;
+  display: inline-block;
+  font-family: Flaticon2;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  content: "";
+  vertical-align: middle;
+  position: absolute;
+  top: 15px;
+  margin-left: 21.5rem /*rtl:ignore*/;
+  opacity: 0.7;
+}
 body {
   margin: 0;
   font-family: Poppins, Helvetica, sans-serif;
